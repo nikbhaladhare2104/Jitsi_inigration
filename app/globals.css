@@ -2,20 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Söhne:wght@400;500;600&family=Signifier&display=swap");
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Global Dark Mode */
+
+html {
+  background-color: #000000; /* Dark background */
+  color: #ffffff; /* White text */
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Söhne", sans-serif;
+  color: #ffffff; /* White text */
+}
+
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark .text-white {
+  color: #ffffff;
+}
+
+.dark .bg-white {
+  background-color: #1a1a1a; /* Dark card background */
+}
+
+.dark .bg-primary {
+  background-color: #000000;
+}
+
+.dark .bg-secondary {
+  background-color: #ffffff; /* Keep it for text color */
+}
+
+.dark .border {
+  border-color: #444444; /* Light gray border for cards */
 }
